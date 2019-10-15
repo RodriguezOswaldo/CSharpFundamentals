@@ -18,6 +18,12 @@ namespace CSharpFundamentals
 
             var methodId = 2;
             Console.WriteLine((ShippingMethod)methodId + "\n");
+            //convertign the int to a string
+            Console.WriteLine(method.ToString());
+
+            var methodName = "Express";
+            //convert into an enum type
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
 
             //STRINGS
             var firstName = "Own";
